@@ -14,6 +14,7 @@ export function ChatWidget() {
   const [isStreaming, setIsStreaming] = useState(false);
   const [timeLeft, setTimeLeft] = useState(600); // 10 minutes
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const messagesContainerRef = useRef<HTMLDivElement>(null);
 
   const createConversation = useCreateOpenaiConversation();
 
@@ -38,7 +39,9 @@ export function ChatWidget() {
   };
 
   const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (messagesContainerRef.current) {
+      messagesContainerRef.current.scrollTop = messagesContainerRef.current.scrollHeight;
+    }
   };
 
   useEffect(() => {
@@ -139,7 +142,7 @@ export function ChatWidget() {
       </div>
 
       {/* Messages Area */}
-      <div className="flex-1 overflow-y-auto p-4 space-y-6 scroll-smooth">
+      <div ref={messagesContainerRef} className="flex-1 overflow-y-auto p-4 space-y-6 scroll-smooth">
         <AnimatePresence>
           {messages.map((msg, idx) => (
             <motion.div
