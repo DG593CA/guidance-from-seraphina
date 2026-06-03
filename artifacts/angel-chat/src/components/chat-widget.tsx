@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export function ChatWidget() {
   const [messages, setMessages] = useState<{ role: string; content: string }[]>([
-    { role: "assistant", content: "I can sense your energy... The Angels are already whispering. What would you like guidance on today?" }
+    { role: "assistant", content: "I feel a warm presence around you... Someone who loves you very much is near. What is in your heart today?" }
   ]);
   const [input, setInput] = useState("");
   const [conversationId, setConversationId] = useState<number | null>(null);
@@ -20,7 +20,7 @@ export function ChatWidget() {
 
   useEffect(() => {
     createConversation.mutate(
-      { data: { title: "Angel Guidance" } },
+      { data: { title: "Crystal Sage Reading" } },
       { onSuccess: (data) => setConversationId(data.id) }
     );
   }, []);
@@ -121,13 +121,13 @@ export function ChatWidget() {
         <div className="flex items-center gap-3">
           <div className="relative">
             <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center border border-primary/50 overflow-hidden">
-              <img src="/seraphina.png" alt="Seraphina" className="w-full h-full object-cover opacity-80" />
+              <img src="/seraphina.png" alt="Crystal Sage" className="w-full h-full object-cover opacity-80" />
             </div>
             <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-green-400 rounded-full border-2 border-card"></div>
           </div>
           <div>
             <h3 className="font-serif font-medium text-primary-foreground tracking-wide flex items-center gap-2">
-              Seraphina <Sparkles className="w-3 h-3 text-primary" />
+              Crystal Sage <Sparkles className="w-3 h-3 text-primary" />
             </h3>
             <p className="text-xs text-primary/60">Live Medium</p>
           </div>
@@ -153,7 +153,7 @@ export function ChatWidget() {
               className={`flex flex-col ${msg.role === "user" ? "items-end" : "items-start"}`}
             >
               {msg.role === "assistant" && idx > 0 && (
-                <span className="text-xs text-primary/50 ml-2 mb-1 font-serif italic">Seraphina</span>
+                <span className="text-xs text-primary/50 ml-2 mb-1 font-serif italic">Crystal Sage</span>
               )}
               <div 
                 className={`max-w-[80%] rounded-2xl px-5 py-3 ${
@@ -177,7 +177,7 @@ export function ChatWidget() {
               className="flex items-center gap-2 text-primary/60 text-sm font-serif italic px-2"
             >
               <Loader2 className="w-4 h-4 animate-spin" />
-              Seraphina is channeling...
+              Crystal Sage is connecting...
             </motion.div>
           )}
         </AnimatePresence>

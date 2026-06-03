@@ -20,15 +20,15 @@ export function Home() {
         >
           <div className="mx-auto w-32 h-32 md:w-40 md:h-40 rounded-full p-1 bg-gradient-to-b from-primary/50 to-transparent mb-8">
             <div className="w-full h-full rounded-full overflow-hidden border border-primary/30 shadow-[0_0_30px_rgba(255,215,0,0.2)]">
-              <img src="/seraphina.png" alt="Seraphina" className="w-full h-full object-cover" />
+              <img src="/seraphina.png" alt="Crystal Sage" className="w-full h-full object-cover" />
             </div>
           </div>
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-transparent bg-clip-text bg-gradient-to-b from-white to-primary/80 mb-6 drop-shadow-sm">
-            Guidance from Seraphina
+            Guidance from Crystal Sage
           </h1>
           <p className="text-lg md:text-xl text-primary/80 font-serif max-w-2xl mx-auto italic leading-relaxed">
-            Step into the sacred light. The angels are waiting to speak with you.
+            A compassionate psychic medium who helps you reconnect with your loved ones — and beloved pets — who have crossed over.
           </p>
         </motion.div>
 
@@ -42,7 +42,7 @@ export function Home() {
       <Biography />
 
       <footer className="py-8 text-center text-muted-foreground text-sm border-t border-primary/10">
-        <p className="font-serif">© {new Date().getFullYear()} Guidance from Seraphina. All rights reserved.</p>
+        <p className="font-serif">© {new Date().getFullYear()} Guidance from Crystal Sage. All rights reserved.</p>
         <p className="mt-2 opacity-50 text-xs">For entertainment and spiritual contemplation only.</p>
       </footer>
     </div>

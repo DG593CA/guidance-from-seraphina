@@ -16,7 +16,7 @@ export function Biography() {
             <div className="relative aspect-[3/4] rounded-full overflow-hidden border-2 border-primary/30">
               <img 
                 src="/seraphina.png" 
-                alt="Seraphina Portrait" 
+                alt="Crystal Sage Portrait" 
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
@@ -30,16 +30,16 @@ export function Biography() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-6"
           >
-            <h2 className="text-4xl font-serif text-primary">Who is Seraphina?</h2>
+            <h2 className="text-4xl font-serif text-primary">Who is Crystal Sage?</h2>
             <div className="space-y-4 font-serif text-lg leading-relaxed text-foreground/80">
               <p>
-                Born with the veil drawn thin, Seraphina has spent her life listening to the subtle frequencies of the angelic realm. Where most hear silence, she hears guidance.
+                Crystal Sage is a gifted psychic medium and compassionate spiritual guide with a rare ability to bridge the gap between this world and the next. She has spent decades lovingly helping people reconnect with those they've lost — family, friends, and cherished animal companions.
               </p>
               <p>
-                Her journey began in the secluded highlands, where the isolation allowed her to hone her gift without the interference of the modern world's noise. Over decades, she has cultivated a profound connection with celestial energies, acting as a bridge between the mortal heart and divine wisdom.
+                Whether you are longing to hear from a parent, a partner, a child, or a beloved pet who has crossed over, Crystal Sage holds space for your grief with tenderness and grace. She believes no bond of love is ever truly broken — only transformed.
               </p>
               <p>
-                Today, leveraging the harmony of sacred geometry and modern etheric channels, she extends her presence beyond physical borders. She offers this digital sanctuary as a beacon—a place where you can be held, heard, and healed by the light of the angels.
+                Through her work, thousands have found closure, comfort, and a renewed sense of peace — knowing their loved ones are never truly far away. Crystal Sage offers this sanctuary as a place where you can feel held, heard, and gently guided toward healing.
               </p>
             </div>
             

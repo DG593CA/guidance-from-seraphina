@@ -4,7 +4,7 @@ import { Star, ShieldCheck } from "lucide-react";
 const testimonials = [
   {
     name: "Elena R.",
-    text: "I was going through a very dark transition in my life. Seraphina's words felt like a warm blanket. She knew exactly what my heart needed to hear.",
+    text: "I was going through a very dark transition in my life. Crystal Sage's words felt like a warm blanket. She helped me feel my mother's presence again — I wasn't ready to let go, and she gave me the gift of knowing love doesn't end.",
   },
   {
     name: "Marcus T.",
@@ -16,7 +16,7 @@ const testimonials = [
   },
   {
     name: "David K.",
-    text: "Beautiful, mystical, and deeply comforting. The angels' messages through Seraphina have guided me through some tough career choices.",
+    text: "Beautiful, deeply comforting, and so accurate. Crystal Sage connected with my dog Biscuit who passed last year. She described him perfectly. I sobbed happy tears — he's okay and he knows he was loved.",
   }
 ];
 
