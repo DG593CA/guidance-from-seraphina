@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/static/"
+title = "Guidance from Seraphina (Static)"
+version = "1.0.0"
+id = "artifacts/angel-chat-static"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/static/" ]
+localPort = 25149
+
+[services.development]
+run = "pnpm --filter @workspace/angel-chat-static run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/angel-chat-static", "run", "build" ]
+publicDir = "artifacts/angel-chat-static/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25149"
+BASE_PATH = "/static/"
